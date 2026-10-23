@@ -1,0 +1,19 @@
+available_eggs = 1
+available_flour = 2
+available_sugar = 3
+
+def check_kitchen_stock():
+    total_items = available_eggs + available_flour + available_sugar
+    print(f'The kitchen has {total_items} total items:')
+    print(f'- {available_eggs} eggs')
+    print(f'- {available_flour} flour')
+    print(f'- {available_sugar} sugar')
+
+check_kitchen_stock()
+
+def use_eggs(available_eggs, eggs_to_use):
+    if eggs_to_use > available_eggs:
+        print('The kitchen does not have enough eggs.')
+        return available_eggs
+
+    
